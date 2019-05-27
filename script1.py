@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Website content :)"
+    return "Homepage content :)"
+
+@app.route("/subpage/")
+def subpage():
+    return "Subpage content."
 
 if __name__ == "__main__":
     app.run(debug=True)
