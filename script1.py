@@ -8,7 +8,7 @@ def home():
 
 @app.route("/subpage/")
 def subpage():
-    return "Subpage content."
+    return render_template("subpage.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
